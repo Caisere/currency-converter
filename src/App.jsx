@@ -37,7 +37,7 @@ function App() {
   });
 
   function handleOnSubmit(data) {
-    console.log('Form Submitted Succesfully', data);
+    // console.log('Form Submitted Succesfully', data);
     let fromCur = data?.convertingCurrency;
     let toCur = data?.convertedCurrency;
     if (fromCur === toCur) return;
