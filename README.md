@@ -22,7 +22,7 @@ A React-based currency converter application that allows users to convert betwee
 
    ```bash
    git clone <repository-url>
-   cd usepopcorn
+   cd currency-converter
    ```
 
 2. **Install dependencies**
