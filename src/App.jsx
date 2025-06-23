@@ -17,7 +17,7 @@ function App() {
 
   const { curCurrency, convertingCurrency, convertedCurrency } = formValues;
 
-  const x = convertedCurrency === convertingCurrency;
+  const currencyCheck = convertedCurrency === convertingCurrency;
 
   // const [count, setCount] = useState(0);
   const { data, isLoading, refetch } = useQuery({
@@ -91,7 +91,7 @@ function App() {
           {isLoading ? 'Converting...' : 'Convert'}
         </button>
 
-        {<input className="result" value={x ? 'Error' : data} readOnly />}
+        {<input className="result" value={currencyCheck ? 'Error' : data} readOnly />}
       </form>
     </>
   );
