@@ -85,7 +85,7 @@ function App() {
           </select>
         </div>
 
-        {currencyCheck && <p>): Oops! Can't convert same currency</p>}
+        {currencyCheck && <p>): Error: Cannot convert identical currencies</p>}
 
         <button type="submit" disabled={isLoading}>
           {isLoading ? 'Converting...' : 'Convert'}
